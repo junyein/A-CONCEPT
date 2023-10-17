@@ -1,0 +1,347 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    box-sizing: border-box;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+button {
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+header {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(49, 49, 49);
+}
+.bg2 {
+    width: 1170px;
+    height: 1035px;
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,0);
+    /*border: 1px solid black;*/
+}
+.logo {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+}
+.logo2 {
+    position: absolute;
+    top: 10px;
+    left: 80px;
+    color: #fff;
+}
+.menu {
+    width: 600px;
+    overflow: hidden;
+    position: absolute;
+    top: 25px;
+    right: -150px;
+
+  }
+  
+  .menu > li {
+    width: 20%; /*20*5=100%*/
+    float: left;
+    text-align: center;
+    line-height: 40px;   
+  }
+  
+  .menu a {
+    color: #fff;
+  }
+  
+  .submenu > li {
+    line-height: 50px;
+    background-color: #7c7c7c;
+  }
+  
+  .submenu {
+    height: 0; /*ul의 높이를 안보이게 처리*/
+    overflow: hidden;
+    transition-duration: 0.5s;
+  }
+
+  .menu > li:hover {
+    background-color: #212121;
+    transition-duration: 0.5s;
+  }
+  
+  .menu > li:hover .submenu {
+    height: 200px; /*서브메뉴 li한개의 높이 50*5*/
+    transition-duration: 1s;
+  }
+  nav .submenu>li>a:hover {
+    color: #794425;
+}
+
+.shoppingbag{
+    width: 25px;
+    height: 29px;
+    margin-top: 0px;
+}
+
+main {
+    position: relative;
+    top: 130px;
+    left: 50%;
+    transform: translate(-50%,0%);
+    width: 1170px;
+    height: 900px;
+    /*border: 1px solid rgb(0, 225, 255);*/
+}
+
+.section1 {
+    /*border: 1px solid black;*/
+    width: 700px;
+    height: 308px;
+}
+.section1 img{
+    width: 130px;
+    height: 154px;
+    position: absolute;
+    left: 150px;
+    top: 110px;
+}
+.section1 .p1 {
+    position: absolute;
+    left: 60px;
+    top: 40px;
+}
+.section1 .p2 {
+    position: absolute;
+    left: 250px;
+    top: 40px;
+}
+.section1 .p3 {
+    position: absolute;
+    left: 560px;
+    top: 40px;
+}
+.section1 .hr1 {
+    border: 1.5px solid black;
+}
+.section1 .hr2 {
+    position: absolute;
+    top: 80px;
+    width: 700px;
+    
+}
+.section1 input {
+    position: absolute;
+    left: 60px;
+    top: 180px;
+}
+.section1 .p4 {
+    text-align: center;
+    font-size: 12px;
+    position: absolute;
+    top: 130px;
+    left: 300px;
+}
+.section1 .p5 {
+    position: absolute;
+    top: 170px;
+    left: 550px;
+}
+.section1 .hr3 {
+    position: absolute;
+    top: 310px;
+    width: 700px;
+    border: 1.5px solid black;
+}
+.section2 {
+    /*border: 1px solid black;*/
+    width: 370px;
+    height: 244px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.section2 .btn1 {
+    width: 370px;
+    height: 60px;
+    position: absolute;
+    top: 250px;
+    right: 0;
+    background-color: #646464;
+    color: #fff;
+    
+}
+h1 {
+    font-size: 20px;
+}
+.section2 .hr1 {
+    border: 1.5px solid black;
+}
+.section2 .p1 {
+    position: absolute;
+    top: 50px;
+}
+.section2 .p2 {
+    position: absolute;
+    top: 50px;
+    right: 0px;
+}
+.section2 .p3 {
+    position: absolute;
+    top: 80px;
+}
+.section2 .p4 {
+    position: absolute;
+    top: 80px;
+    right: 0;
+}
+.section2 .hr2{
+    position: absolute;
+    top: 130px;
+    left: 30px;
+    width: 315px;
+}
+.section2 .p5 {
+    position: absolute;
+    top: 160px;
+}
+.section2 .p6 {
+    position: absolute;
+    top: 160px;
+    right: 0;
+}
+.section2 .p7 {
+    position: absolute;
+    top: 190px;
+}
+.section2 .p8 {
+    position: absolute;
+    top: 190px;
+    right: 0;
+}
+
+
+.section3 {
+    position: relative;
+    top: 120px;
+}
+
+.que:first-child{
+    border-top: 1px solid black;
+  }
+  
+.que{
+  position: relative;
+  padding: 17px 0;
+  padding-left: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  border-bottom: 1px solid #dddddd;
+  
+}
+  
+.que::before{
+  display: inline-block;
+  font-size: 14px;
+  color: #006633;
+  margin: 0 5px;
+}
+
+.que.on>span{
+  font-weight: bold;
+  color: #006633; 
+
+}
+  
+.anw {
+  display: none;
+  overflow: hidden;
+  font-size: 14px;
+  background-color: #f4f4f2;
+  padding: 27px 0;
+  padding-left: 20px;
+}
+  
+.anw::before {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  color: #666;
+  margin: 0 5px;
+}
+
+.arrow-wrap {
+  position: absolute;
+  top:50%; right: 10px;
+  transform: translate(0, -50%);
+}
+
+.que .arrow-top {
+  display: none;
+}
+.que .arrow-bottom {
+  display: block;
+}
+.que.on .arrow-bottom {
+  display: none;
+}
+.que.on .arrow-top {
+  display: block; 
+}
+
+footer {
+    width: 100%;
+    height: 500px;
+    background-color: rgb(49, 49, 49);
+    position: relative;
+    top: 0px;
+}
+.foot {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
+    width: 1170px;
+    height: 500px;
+    /*border: 1px solid black;*/
+}
+footer h1 {
+    font-weight: bold;
+    font-size: 128px;
+    color: #ffffffc7;
+    text-align: center;
+}
+footer p {
+    text-align: center;
+    color: #fff;
+}
+footer img {
+    width: 40px;
+    height: 40px;
+    
+}
+footer .icon1 {
+    position: absolute;
+    right: 270px;
+    bottom: 35px;
+}
+footer .icon2 {
+    position: absolute;
+    right: 200px;
+    bottom: 35px;
+}
+select {
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+    width: 120px;
+    height: 30px;
+}

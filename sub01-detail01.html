@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A-concept_productDetai</title>
+    <link rel="stylesheet" href="./css/sub01-detail01.css">
+    <script src="./script/jquery-3.6.4.min.js"></script>
+    <script src="./script/sub01-detail01.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+</head>
+</head>
+<body>
+    <header>
+        <div class="bg2">
+            <div class="logo"><a href="./index.html"><img src="./imges/logo.png"></a></div>
+            <div class="logo2">
+                <a href="./index.html">
+                    <p>
+                        #CLASSIC<br>
+                        #ARTISTIC<br>
+                        #FEMININE
+                    </p>
+                </a>
+            </div>
+            <nav>
+                <ul class="menu"> 
+                    <li><a href="./sub01.html">CATEGORY</a>
+                        <ul class="submenu">
+                            <li><a href="./sub01.html">BAG</a></li>
+                            <li><a href="./sub02.html">CLOTHES</a></li>
+                            <li><a href="./sub03.html">SHOES</a></li>
+                            <li><a href="./sub04.html">JEWELRY</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./login.html">LOGIN</a></li>
+                    <li><a href="./signup.html">JOIN</a></li>
+                    <li><a href="./shopping_bag.html"><img src="./imges/장바구니.png" class="shoppingbag"></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section1">
+            <div id="container">
+
+                <div id="prod-pic">
+                 <img src="./imges/의류2.jpg" alt="에디오피아 게뎁" id="cup" class="img1" width="370" height="555">
+              
+                 <div id="small-pic">
+                  <img src="./imges/의류2.jpg" class="small img2">
+                  <img src="./imges/구매1.jpg" class="small img3">
+                  <img src="./imges/구매2.jpg" class="small img4">
+                  <img src="./imges/구매3.jpg" class="small img5">
+                 </div>
+                </div>
+
+            <div class="purchase">
+                <p>
+                CATEGORY > CLOTHES<br>
+                울 블렌드 하이넥<br>
+                TM2D9TTO941W_CB<br>
+                <hr>
+                </p>
+                <p>
+                    색상 선택
+                    <div class="color1"></div>
+                    <div class="color2"></div>
+                    <div class="color3"></div>
+                </p>
+                <p class="p1">
+                    사이즈 선택
+                    <select class="select1">
+                        <option>80 (S, 모델착용)</option>
+                        <option>85 (m)</option>
+                        <option>90 (L)</option>
+                    </select>
+                </p>
+                <p class="p2">
+                    수량선택
+                </p>
+                <input type='button' onclick='count("plus")' value='+' class="plus">
+                <input type='button' onclick='count("minus")' value='-' class="minus">
+                <div id='result' class="result">0</div>
+
+
+                <hr class="hr1">
+                <p class="p3">
+                    상품 금액
+                </p>
+                <p class="p4">
+                    275,000
+                </p>
+                <p class="p5">
+                    배송비
+                </p>
+                <p class="p6">
+                    0
+                </p>
+                <p class="p7">
+                    총금액
+                </p>
+                <p class="p8">
+                    275,000
+                </p>
+                
+                <button class="btn1">쇼핑백</button>
+                <button class="btn2">바로구매</button>
+            </div> 
+        </section>
+    
+        
+
+        <div class="tab_content">
+                <input type="radio" id="tab01" name="tabmenu" checked>
+                <label for="tab01">상세정보</label>
+            
+                <input type="radio" id="tab02" name="tabmenu">
+                <label for="tab02">상품평</label>
+            
+                
+            <div class="conbox con1">
+                    
+                화사한 컬러가 돋보이는 니트 탑으로 부드럽고 가벼운 울 혼방 소재를<br>
+                사용하였습니다. 내부가 살짝 비치는 소재이며, 레귤러 실루엣과 라운<br>
+                드넥으로 디자인하였습니다. 심플한 디자인이 특징이며, 상단에 하단<br>
+                과 다른 니트 짜임을 블록하여 포인트를 주었습니다.<br><br><br>
+                <br>
+                피팅정보<br>
+                170cm, 55 사이즈 모델이 80 사이즈 착용<br><br>
+                <br>
+                <br>
+                상품추가정보<br>
+                울 혼방 소재<br>
+                하이넥 디자인<br>
+                상단에 다른 니팅 짜임<br>                
+                        
+                <table>
+                    <tr>
+                        <td>핏</td>
+                        <td class="gray">슬림핏</td>
+                        <td>레귤러핏</td>
+                        <td class="gray">루즈핏</td>
+                    </tr>
+                    <tr>
+                        <td>신축성</td>
+                        <td class="gray">없음</td>
+                        <td class="gray">조금있음</td>
+                        <td>있음</td>
+                    </tr>
+                    <tr>
+                        <td>비침</td>
+                        <td>없음</td>
+                        <td class="gray">약간</td>
+                        <td class="gray">있음</td>
+                    </tr>
+                    <tr>
+                        <td>두께</td>
+                        <td class="gray">얇음</td>
+                        <td>보통</td>
+                        <td class="gray">두꺼움</td>
+                    </tr>
+                    <tr>
+                        <td>안감</td>
+                        <td class="gray">없음</td>
+                        <td class="gray">부분안감</td>
+                        <td>전체안감</td>
+                    </tr>
+                </table>                    
+            </div>
+
+
+            <div class="conbox con2">
+                        <hr>
+                        <h1>실물이 더 예뻐요 ★★★★★</h1>
+                        <h3>색상 핏 기장 너무너무 이뻐요 55반정도 되는데 불편하지않게 잘맞아요 날씬해보입니다</h3>
+                        <h5>jh3*** 23.9.20</h5>
+                        
+                        <hr>
+                        <h1>만족합니다 ★★★★★</h1>
+                        <h3>부드럽고 얇아서 9월부터 입을수 있겠어요. 여성스럽고 단정합니다.</h3>
+                        <h5>pea***** 23.9.2</h5>
+
+                        <hr>
+                        <h1>실물이 더 예뻐요 ★★★★★</h1>
+                        <h3>색감이 너무 예쁜 재킷이에요.^^핏도 너무 예쁘고 캐시미어 혼방이라 가볍고 따뜻해요.</h3>
+                        <h5>jin******* 23.7.10</h5>
+
+                        <hr>
+                    
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="foot">
+            <h1>A-CONCEPT</h1>
+            <P>
+                (주)ARTIST<br>
+                이용약관<br>
+                개인정보처리방침<br>
+                사업자정보확인<br>
+                입점문의<br>
+                <br>
+                회사명 : 주식회사 ARTIS 대표 : 전예인 사업자등록번호 : 311-11-11111 주소: 서울특별시 서초구  25길 빌딩 4층 E-MAIL : dpdlscjstk@naver.com <br>
+                개인정보관리책임자 : 전예인 상표등록 : 1-2023-1111-7  벤처확인 : 11111111112호<br>
+                <br>
+                Instagram Blog<br>
+                2023 StyleSeller Co., Ltd. All rights reserved<br>
+            </P>
+
+            <img src="./imges/icon1.png" class="icon1">
+            <img src="./imges/icon2.png" class="icon2">
+
+            <select>
+                <option value="패밀리사이트">패밀리사이트</option>
+                <option value="패밀리사이트">Artist hotel</option>
+                <option value="패밀리사이트">Artist hotel2</option>
+                <option value="패밀리사이트">Artist hotel3</option>
+            </select>
+        </div>
+    </footer>
+</body>
+</html>

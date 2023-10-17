@@ -1,0 +1,240 @@
+@charset "utf-8";
+
+/*전체선택자*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    box-sizing: border-box;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+button {
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+
+/*헤더*/
+header {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(49, 49, 49);
+    
+}
+.bg2 {
+    width: 1170px;
+    height: 1035px;
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,0);
+    /*border: 1px solid black;*/
+}
+.logo {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+}
+.logo2 {
+    position: absolute;
+    top: 10px;
+    left: 80px;
+    color: #fff;
+}
+.menu {
+    width: 600px;
+    overflow: hidden;
+    position: absolute;
+    top: 25px;
+    right: -150px;
+
+  }
+  
+  .menu > li {
+    width: 20%; /*20*5=100%*/
+    float: left;
+    text-align: center;
+    line-height: 40px;   
+  }
+  
+  .menu a {
+    color: #fff;
+  }
+  
+  .submenu > li {
+    line-height: 50px;
+    background-color: #7c7c7c;
+  }
+  
+  .submenu {
+    height: 0; /*ul의 높이를 안보이게 처리*/
+    overflow: hidden;
+    transition-duration: 0.5s;
+  }
+
+  .menu > li:hover {
+    background-color: #212121;
+    transition-duration: 0.5s;
+  }
+  
+  .menu > li:hover .submenu {
+    height: 200px; /*서브메뉴 li한개의 높이 50*5*/
+    transition-duration: 1s;
+  }
+  nav .submenu>li>a:hover {
+    color: #794425;
+}
+
+.shoppingbag{
+    width: 25px;
+    height: 29px;
+    margin-top: 0px;
+}
+
+
+/*메인*/
+main {
+    width: 1170px;
+    height: 400px;
+    /*border: 1px solid black;*/
+    position: relative;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+.h1_1 {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+
+.id {
+    width: 470px;
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 15px;
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+.pw {
+    width: 470px;
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 15px;
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+.login {
+    width: 170px;
+    height: 52px;
+    background-color: #303030;
+    color: #fff;
+    text-align: center;
+    line-height: 52px;
+    font-size: 15px;
+    position: absolute;
+    left: 75%;
+    top: 150px;
+
+}
+.check {
+    position: absolute;
+    top: 220px;
+    left:350px;
+}
+main label {
+    position: absolute;
+    top: 218px;
+    left: 370px;
+    font-size: 10px;
+}
+.p1 {
+    position: absolute;
+    top: 218px;
+    left: 620px;
+    font-size: 10px;
+}
+.btn1 {
+    position: absolute;
+    top: 280px;
+    left: 450px;
+    width: 160px;
+    height: 42px;
+    background-color: #646464;
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    line-height: 42px;
+}
+.btn2 {
+    position: absolute;
+    top: 280px;
+    left: 660px;
+    width: 160px;
+    height: 42px;
+    background-color: #646464;
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    line-height: 42px;
+}
+
+/*푸터*/
+footer {
+    width: 100%;
+    height: 500px;
+    background-color: rgb(49, 49, 49);
+    position: relative;
+    top: 200px;
+}
+.foot {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
+    width: 1170px;
+    height: 500px;
+    /*border: 1px solid black;*/
+}
+footer h1 {
+    font-weight: bold;
+    font-size: 128px;
+    color: #fefefeca;
+    text-align: center;
+}
+footer p {
+    text-align: center;
+    color: #fff;
+}
+footer img {
+    width: 40px;
+    height: 40px;
+    
+}
+footer .icon1 {
+    position: absolute;
+    right: 270px;
+    bottom: 35px;
+}
+footer .icon2 {
+    position: absolute;
+    right: 200px;
+    bottom: 35px;
+}
+select {
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+    width: 120px;
+    height: 30px;
+}
